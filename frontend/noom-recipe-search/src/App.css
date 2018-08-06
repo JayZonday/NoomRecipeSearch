@@ -26,3 +26,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.searchbar-box{
+  border: 2px solid black;
+  margin: 2px auto;
+  padding: 30px;
+  height: 20px;
+  width: 150px;
+  border-radius: 2pc;
+}
