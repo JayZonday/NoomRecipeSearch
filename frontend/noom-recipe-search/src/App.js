@@ -1,21 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SearchBar from './SearchBar'
 
-
 class App extends React.Component{
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Noom Recipe Search</h1>
+          <img src='https://dancingwithfruitcake.files.wordpress.com/2018/06/noom.png' className="App-logo" alt="logo" />
+          <h1 className="App-title">Noom Recipe Hunt</h1>
         </header>
+      <div id="searchbox">
         <p className="App-intro">
-          Start typing and make a simple recipe search!
+          Making recipe searches even easier!
         </p>
         <SearchBar/>
+      </div>
       </div>
     );
   }

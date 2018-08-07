@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -16,16 +17,14 @@
 
 .App-title {
   font-size: 1.5em;
+  text-shadow: 2px 2px orange;
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+/* Search Bar Styling */
 
 .searchbar-box{
   border: 2px solid black;
@@ -34,4 +33,25 @@
   height: 20px;
   width: 150px;
   border-radius: 2pc;
+  background-color: rgba(0,0,0,0.7)
+}
+
+#searchbox{
+  border: 2px solid white;
+  margin: 175px auto;
+  padding: 25px;
+  height: 200px;
+  width: 285px;
+  border-radius: 1pc;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+
+#searchbar-input{
+  border: 2px solid orange;
+  margin: -10px auto;
+  padding: 12px;
+  height: 20px;
+  width: 125px;
+  border-radius: 2pc
 }
