@@ -31,19 +31,18 @@
   margin: 2px auto;
   padding: 30px;
   height: 20px;
-  width: 150px;
+  width: 160px;
   border-radius: 2pc;
   background-color: rgba(0,0,0,0.7)
 }
 
 #searchbox{
   border: 2px solid white;
-  margin: 175px auto;
-  padding: 25px;
+  margin: 80px auto;
   height: 200px;
-  width: 285px;
+  width: 415px;
   border-radius: 1pc;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.8);
   color: white;
 }
 
@@ -52,6 +51,29 @@
   margin: -10px auto;
   padding: 12px;
   height: 20px;
-  width: 125px;
+  width: 140px;
   border-radius: 2pc
+}
+
+
+/*Recipe Styling and Containers*/
+
+.recipe-list{
+  border: 2px solid white;
+  margin: 80px -80px auto;
+  padding: 25px;
+  height: 200px;
+  width: 510px;
+  border-radius: 1pc;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  overflow: scroll;
+}
+.recipe-card{
+  border: 2px solid white;
+  margin: 10px auto;
+  padding: 5px;
+}
+#rec-title{
+  color: orange
 }
