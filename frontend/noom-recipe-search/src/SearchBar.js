@@ -1,18 +1,26 @@
 import React from 'react'
-
+import _ from 'lodash';
 class SearchBar extends React.Component{
+
+  constructor(props) {
+    super(props);
+    this.onChangeHandler = _.debounce(this.onChangeHandler, 500);
+  }
+
 
   state = {
     search: " ",
     recipes: []
   }
 
-  onChangeHandler = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value
-    })
+  onChangeHandler = (search) => {
+
+    // const search = e.target.value;
+
+    if(!search) return;
+    console.log(search)
     console.log(this.state)
-    fetch(`http://www.recipepuppy.com/api/?q=${this.state.search}`)
+    fetch(`http://www.recipepuppy.com/api/?q=${search}`)
       .then(res => res.json())
       .then(recipes =>
         this.setState({
@@ -28,7 +36,7 @@ class SearchBar extends React.Component{
     return (
       <div>
       <div className="searchbar-box">
-        <input name='search' id="searchbar-input" onChange={this.onChangeHandler} placeholder="Search Keyword in Recipe"></input>
+        <input name='search' id="searchbar-input" onChange={ e => this.onChangeHandler(e.target.value) } placeholder="Search Keyword in Recipe"></input>
       </div>
       <div className='recipe-list'>
         {recipes}
