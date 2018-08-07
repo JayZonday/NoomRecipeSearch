@@ -36,7 +36,7 @@ class SearchBar extends React.Component{
     return (
       <div>
       <div className="searchbar-box">
-        <input name='search' id="searchbar-input" onChange={ e => this.onChangeHandler(e.target.value) } placeholder="Search Keyword in Recipe"></input>
+        <input name='search' id="searchbar-input" onKeyUp={ e => this.onChangeHandler(e.target.value) } placeholder="Search Keyword in Recipe"></input>
       </div>
       <div className='recipe-list'>
         {recipes}
