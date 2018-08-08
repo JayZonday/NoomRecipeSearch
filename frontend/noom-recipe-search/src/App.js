@@ -9,7 +9,7 @@ class App extends React.Component{
       <div className="App">
         <header className="App-header">
           <img src='https://dancingwithfruitcake.files.wordpress.com/2018/06/noom.png' className="App-logo" alt="logo" />
-          <h1 className="App-title">Noom Recipe Hunt</h1>
+          <h1 className="App-title">Recipe Hunter</h1>
         </header>
       <div id="searchbox">
         <p className="App-intro">
