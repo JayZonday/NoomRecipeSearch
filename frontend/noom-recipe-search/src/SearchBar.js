@@ -42,7 +42,6 @@ class SearchBar extends React.Component{
         {recipes}
       </div>
       </div>
-
     )
   }
 }
